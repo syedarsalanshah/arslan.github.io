@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "helvetica";
+    box-sizing:  border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+
+    width: 100%;
+
+    background-color: black;
+    min-height: 100vh;
+
+}
+
+#top{
+
+    width: 100%;
+    min-height: 60vh;
+    background-color: rgb(0, 132, 233);
+    background-image: url(https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: grayscale(70%);
+    border-bottom: 1px solid white;
+   
+}
+
+#bottom{
+
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(255, 39, 1);
+    display: flex;
+    
+}
+
+#btm_1{
+
+    width: 20%;
+    min-height: inherit;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80);
+    background-position: right;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+#p_btm1{
+    color: white;
+    
+   margin-top: 200px;
+   margin-left: 120px;
+}
+#btm_2{
+    width: 30%;
+    min-height: inherit;
+    background-color: rgb(211, 1, 248);
+    background-image: url(https://images.unsplash.com/photo-1519505645104-c7be90e0d630?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    
+}
+#icons_2{
+    color: white;
+    margin-left: 38%;
+    margin-top: 26%;
+    font-size: 70px;
+    font-weight: 300;
+
+}
+
+#btm_3{
+
+    width: 20%;
+    min-height: inherit;
+    background-color: rgb(248, 248, 248);
+    
+}
+#btm_4{
+    width: 30%;
+    min-height: inherit;
+    background-color: rgb(243, 239, 8);
+    background-image: url(https://images.unsplash.com/photo-1544033527-b192daee1f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: bottom;
+    filter: grayscale(100%);
+}
+#btm3_top{
+    width: 100%;
+    min-height: 15vh;
+    background-color: rgb(255, 77, 0);
+    position: relative;
+    
+}
+#btm3_bottom{
+
+    width: 100%;
+    min-height: 25vh;
+    background-color: rgb(8, 243, 149);
+    background-image: url(https://images.unsplash.com/photo-1668851583832-ee3c799b30ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    background-size:cover;
+    background-position: center;
+    
+}
+
+
+#overlay{
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+    
+
+}
+
+#text{
+    position: absolute;
+    width: 100%;
+  
+    align-items: center;
+    padding: 0 10vw;
+   
+    display: flex;
+    bottom: 20%;
+    
+}
+
+#text h1{
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+}
+#text_rightside{
+    margin-left: 30%;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#text_rightside p{
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#icons i{
+    
+    color: white;
+    padding-left: 10px;
+}
+
+
+#top_font h3,h4{
+    color: white;
+ 
+    
+    
+}
+
+
+#top_font h3{
+    font-size: 12px;
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 32%;
+    
+    
+    justify-content: center;
+   letter-spacing: 2px;
+   
+}
+#top_font h4{
+    font-size: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 32.5%;
+    
+}
+
+@media(max-width: 500px){
+
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #text_rightside{
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+
+    #overlay #text #text_rightside p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #text_rightside #icons{
+        margin-top: 30px;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #bottom{
+        flex-direction: column;
+        
+    }
+    #btm_1{
+        width: 100%;
+    }
+    #btm_2{
+        width: 100%;
+    }
+    #btm_3{
+        flex-direction: column;
+        width: 100%;
+    }
+    #btm_4{
+        width: 100%;
+    }
+    
+}
